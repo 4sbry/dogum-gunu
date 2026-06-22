@@ -119,6 +119,19 @@
         </div>
 
        <div id="success" class="success-message">
+           <img id="confettiGif"
+     src="confetti.gif"
+     style="
+        display:none;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100vw;
+        height:100vh;
+        object-fit:cover;
+        pointer-events:none;
+        z-index:999;
+     ">
     <img src="when school is over and you have no homework.jpg"
          alt="YIPPEEE"
          style="max-width:350px; width:100%; margin-bottom:20px;">
@@ -160,6 +173,7 @@
             // Yapısal çökme olmaması için net geçiş
             document.getElementById('quiz').style.display = 'none';
             document.getElementById('success').style.display = 'block';
+            document.getElementById('confettiGif').style.display = 'block';
 
             const colors = ['#ff0000', '#800080', '#ffffff', '#ffeb3b', '#4caf50', '#00bcd4'];
             for (let i = 0; i < 150; i++) {
