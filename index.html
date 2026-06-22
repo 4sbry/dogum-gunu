@@ -161,20 +161,5 @@ function accepted() {
     document.getElementById('quiz').style.display = 'none';
     document.getElementById('success').style.display = 'block';
 
-    // Yeni, tertemiz konfeti efekti
-    const konfetiKutusu = document.createElement('div');
-    konfetiKutusu.innerHTML = "🎉🎊✨🎈🎉"; 
-    konfetiKutusu.style.fontSize = "50px";
-    konfetiKutusu.style.position = "fixed";
-    konfetiKutusu.style.top = "20%";
-    konfetiKutusu.style.left = "50%";
-    konfetiKutusu.style.transform = "translateX(-50%)";
-    konfetiKutusu.style.zIndex = "9999";
-    document.body.appendChild(konfetiKutusu);
-
-    // 2 saniye sonra yok olsun
-    setTimeout(() => { konfetiKutusu.remove(); }, 2000);
-}
-
 </body>
 </html>
